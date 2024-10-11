@@ -7,13 +7,11 @@ return {
             require("harpoon").setup({
                 -- Optionally customize Harpoon settings here
             })
-            -- Keybindings for Harpoon
             local mark = require("harpoon.mark")
             local ui = require("harpoon.ui")
-            vim.keymap.del("n", "<leader>e")
 
             vim.keymap.set("n", "<leader>a", mark.add_file, { desc = "Harpoon Add File" })
-            vim.keymap.set("n", "<leader>e", ui.toggle_quick_menu, { desc = "Harpoon Menu" })
+            vim.keymap.set("n", "<leader>n", ui.toggle_quick_menu, { desc = "Harpoon Menu" })
             vim.keymap.set("n", "<leader>1", function()
                 ui.nav_file(1)
             end, { desc = "Harpoon File 1" })
@@ -28,17 +26,5 @@ return {
             end, { desc = "Harpoon File 4" })
         end,
         lazy = false, -- Load Harpoon immediately (or configure with an event if needed)
-    },
-
-    {
-        "nvim-neo-tree/neo-tree.nvim",
-        opts = {
-            -- Remove the default keymap for <leader>e
-            window = {
-                mappings = {
-                    ["e"] = "",
-                },
-            },
-        },
     },
 }

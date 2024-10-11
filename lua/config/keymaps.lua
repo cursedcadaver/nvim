@@ -1,4 +1,3 @@
-vim.api.nvim_set_keymap("n", "<leader>n", ":Neotree toggle<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<S-x>", ":bdelete<CR>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("v", "J", ":move '>+1<CR>gv-gv", { noremap = true, silent = true })
