@@ -10,3 +10,6 @@ vim.api.nvim_set_keymap("v", "L", ":move '>+1<CR>gv-gv", { noremap = true, silen
 
 -- Move selected tevt left (redent adjustment)
 vim.api.nvim_set_keymap("v", "H", ":move '<-2<CR>gv-gv", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("n", "<leader>v", ":vsplit<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>x", ":close<CR>", { noremap = true, silent = true })

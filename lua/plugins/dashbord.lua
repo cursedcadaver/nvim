@@ -35,7 +35,7 @@ return {
                 footer = function()
                     local stats = require("lazy").stats()
                     local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
-                    return { "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
+                    return { "This is your life, and it’s ending one minute at a time." }
                 end,
             },
         }
